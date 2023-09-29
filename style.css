@@ -527,10 +527,25 @@ footer {
 @media screen and (max-width:480px) {
     nav {
         padding: 20px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .navTop {
+        flex-direction: column;
+        gap: 15px;
     }
 
     .search {
-        display: none;
+        display: flex;
+    }
+
+    .sliderPrice {
+        top: unset;
+        left: 60vw;
+        background-color: lightgrey;
+        bottom: 80vw;
+        font-size: 33px;
     }
 
     .navBottom {
@@ -570,9 +585,10 @@ footer {
     }
 
     .buyButton {
-        right: 10px;
-        top: 10px;
-        font-size: 20px;
+        right: 1px;
+        top: 8px;
+        font-size: 13px;
+        padding: 10px;
     }
 
     .features {
